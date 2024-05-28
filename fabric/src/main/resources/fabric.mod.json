@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "hex_wards",
+  "version": "${version}",
+  "name": "Hex_wards",
+  "description": "Hex_wards addon for Hex Casting",
+  "authors": [
+    "M1tht1c"
+  ],
+  "contact": {
+    "homepage": "https://m1tht1c.github.io/hex_wards",
+    "sources": "https://github.com/M1tht1c/hex_wards"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.hex_wards.fabric.Hex_wardsFabric"
+    ],
+    "client": [
+      "net.hex_wards.fabric.Hex_wardsClientFabric"
+    ]
+  },
+  "mixins": [
+    "hex_wards-common.mixins.json",
+    "hex_wards.mixins.json"
+  ],
+  "depends": {
+    "minecraft": ">=${minecraftVersion}",
+    "fabricloader": ">=${fabricLoaderVersion}",
+    "fabric-api": "*",
+    "fabric-language-kotlin": ">=${fabricKotlinVersion}",
+    "architectury": ">=${architecturyVersion}",
+    "hexcasting": ">=${hexcastingVersion}"
+  }
+}

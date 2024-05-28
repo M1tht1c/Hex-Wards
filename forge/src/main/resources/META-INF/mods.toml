@@ -1,0 +1,41 @@
+modLoader = "javafml"
+loaderVersion = "[${forgeDependencyVersion},)"
+license = "MIT"
+
+[[mods]]
+modId = "hex_wards"
+version = "${version}"
+displayName = "Hex_wards"
+logoFile = "icon.png"
+authors = "M1tht1c"
+description = '''
+Hex_wards addon for Hex Casting
+'''
+
+[[dependencies.hex_wards]]
+modId = "forge"
+mandatory = true
+versionRange = "[${forgeDependencyVersion},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.hex_wards]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[${minecraftVersion},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.hex_wards]]
+modId = "architectury"
+mandatory = true
+versionRange = "[${architecturyVersion},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.hex_wards]]
+modId = "hexcasting"
+mandatory = true
+versionRange = "[${hexcastingVersion},)"
+ordering = "NONE"
+side = "BOTH"
